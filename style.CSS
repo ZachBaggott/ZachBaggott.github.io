@@ -38,8 +38,8 @@ a.anchor {
     text-align: center;
     padding: 65px;
     font-size: 20px;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 * {
@@ -63,7 +63,7 @@ a.anchor {
 .title {
     font-family: Arial;
     text-align: center;
-    margin-right: 30%;
+    margin-right: 25%;
     color: black;
     font-size: 30px;
     margin-top: 10px;
@@ -136,6 +136,28 @@ a.anchor {
 	background-color:#6c7c7c;
 }
 #myBtn2:active {
+	position:relative;
+	top:1px;
+}
+
+#more3 {display: none;}
+
+#myBtn3 {
+	background-color:gray;
+	border-radius:23px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:8px 30px;
+	text-decoration:none;
+	text-shadow:0px 0px 50px #2b665e;
+}
+#myBtn3:hover {
+	background-color:#6c7c7c;
+}
+#myBtn3:active {
 	position:relative;
 	top:1px;
 }

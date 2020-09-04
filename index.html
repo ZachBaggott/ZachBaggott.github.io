@@ -52,6 +52,22 @@ function myFunction() {
   }
 };
               
+                            function myFunction3() {
+  var dots = document.getElementById("dots3");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn3");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Show more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Show less"; 
+    moreText.style.display = "inline";
+  }
+};
+              
 </script>
     
    <!-- navbar -->
@@ -125,8 +141,11 @@ function myFunction() {
         </p>
         
         <p>
-        I would like to aline myself with key industry partners who can assist and help me reach my goals
+        <span id="dots3">...</span><span id="more3"> I would like to aline myself with key industry partners who can assist and help me reach my goals</span>
         </p>
+        
+        <button onclick="myFunction3()" id="myBtn3">Show more</button>
+        
     </div>
     </div>
         </div>
