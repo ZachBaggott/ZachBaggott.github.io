@@ -78,6 +78,11 @@ a.anchor {
   display: inline-block;
 }
 
+.streamsandrivers {
+  position: relative;
+  display: inline-block;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -101,5 +106,33 @@ a.anchor {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: lightgray;}
+
+
+
+
+.streamsandrivers-content {
+  display: none;
+  position: absolute;
+  background-color: darkgoldenrod;
+  min-width: 175px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.streamsandrivers-content a {
+  color: black;
+  padding: 20px 50px;
+  text-decoration: none;
+  display: block;
+}
+
+.streamsandrivers-content a:hover {background-color: lightgray;
+    width: 73.4%;
+}
+
+.streamsandrivers:hover .streamsandrivers-content {display: block;}
+
+.streamsandrivers:hover .dropbtn {background-color: lightgray;}
+
 
 
