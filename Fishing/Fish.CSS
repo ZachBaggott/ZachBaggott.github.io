@@ -134,5 +134,28 @@ a.anchor {
 
 .streamsandrivers:hover .dropbtn {background-color: lightgray;}
 
+.img1 {
+    border: 10px solid;
+    border-color: black;
+    outline: none;
+}
 
+.img2 {
+    float: right;
+    border: 10px solid;
+    border-color: black;
+    outline: none;
+    position: absolute;
+    clip: rect(100px,100px,10px,100px);
+}
 
+.img3 {
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid;
+  border-color: black;
+  outline: none;
+}
+
+img:focus { outline:0 !important; }
