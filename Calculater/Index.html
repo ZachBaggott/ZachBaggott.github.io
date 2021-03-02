@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <head>
+        <link rel="stylesheet" href="Style.CSS">
+    </head>
+
+    <div class="navbar">
+        <button onclick="refresh()" class="Button2">Refresh</button>
+        <button onclick="myFunction()" class="Button">Convert</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- <div>
+        <button onclick="refresh()" class="Button2">Refresh</button> 
+    </div> -->
+
+
+<!-- must do -->
+        
+        <div class="column">
+            
+             <h1 class="text1-1"> Must Do </h1> 
+        
+            <div class="TextBox"> Hourly Wage: $ <Input type="number" step="0.01" id="hourlywage" /> </div>
+
+            <div class="TextBox"> Hours Worked Per Day: <Input type="number" step="0.01" id="hoursworked" /> </div>
+                        <br>
+            <div class="TextBox"> Percent Saved: % <Input type="number" step="0.01" id="percentsaved" /> </div>
+        </div>
+
+        <!-- daily -->
+        <div class="column">
+            <br>
+            <div class="TextBox"> Days Worked: <Input type="number" step="0.01" id="daysworked" /> </div>
+            <br>
+            <br>
+            <div class="totalstyle">
+                Total in <output id="TotalDays">0</output> day: <output id="total">0</output>
+            </div>
+            <div class="totalstyle">
+                Saved: <output id="saved">0</output>
+            </div>
+            <div class="totalstyle">
+                Spending money: <output id="spendingmoney">0</output>
+            </div>
+
+        </div>
+
+
+
+        <!-- weekly -->
+        <div class="column">
+
+            <br>
+
+            <div class="TextBox"> Days Worked Per Week: <Input type="number" step="0.01" id="DaysWorkedPerWeek" /> </div>
+            <br>
+            <div class="TextBox"> Weeks worked: <Input type="number" step="0.01" id="WeeksWorked" /> </div>
+            <br>
+            <div class="totalstyle">
+                Total in <output id="TotalWeeks">0</output> weeks: <output id="total2">0</output>
+            </div>
+            <div class="totalstyle">
+                Saved: <output id="saved2">0</output>
+            </div>
+            <div class="totalstyle">
+                Spending money: <output id="spendingmoney2">0</output>
+            </div>
+        </div>
+
+
+    <!-- <div>
+        <button onclick="myFunction()" class="Button">Convert</button>
+    </div -->
+
+    <script>
+        function myFunction() {
+            var1 = document.getElementById("hourlywage").value;
+            var2 = document.getElementById("hoursworked").value;
+            var3 = document.getElementById("percentsaved").value;
+            var4 = document.getElementById("DaysWorkedPerWeek").value;
+            //var6 = document.getElementById("MoneyMadePerJob").value;
+            //var7 = document.getElementById("JobsDone").value;
+            var8 = document.getElementById("daysworked").value;
+            var9 = document.getElementById("WeeksWorked").value;
+
+            // Days worked
+            document.getElementById("saved").value = (var1 * var2 * (var3 / 100)) * var8;
+            document.getElementById("total").value = (var1 * var2) * var8;
+            document.getElementById("TotalDays").value = var8;
+            document.getElementById("spendingmoney").value = ((var1 * var2) * var8) - ((var1 * var2 * (var3 / 100) * var8));
+            
+                        if (var1 == "" || var2 =="" || var3 =="" || var8 == "") {
+                console.log ("Value missing");
+                document.getElementById("saved").value = "Missing Value";
+                document.getElementById("saved").style.backgroundColor = "DarkGreen";
+            }
+            
+                        if (var1 == "" || var2 =="" || var8 =="") {
+                console.log ("Value missing");
+                document.getElementById("total").value = "Missing Value";
+                document.getElementById("total").style.backgroundColor = "DarkGreen";
+            }
+            
+                        if (var8 == "") {
+                console.log ("Value missing");
+                document.getElementById("TotalDays").value = "Missing Value";
+                document.getElementById("TotalDays").style.backgroundColor = "DarkGreen";
+            }
+            
+                        if (var1 == "" || var2 == "" || var3 =="" || var8 == "") {
+                console.log ("Value missing");
+                document.getElementById("spendingmoney").value = "Missing Value";
+                document.getElementById("spendingmoney").style.backgroundColor = "DarkGreen";
+            }
+            
+            //weeks worked
+            document.getElementById("total2").value = ((var1 * var2) * var4) * var9;
+            document.getElementById("saved2").value = ((var1 * var2 * (var3 / 100)) * var4) * var9;
+            document.getElementById("TotalWeeks").value = var9;
+            document.getElementById("spendingmoney2").value = (((var1 * var2) * var4) * var9) - (var1 * var2 * (var3 / 100) * var4) * var9;
+            
+                                    if (var1 == "" || var2 =="" || var4 =="" || var9 =="") {
+                console.log ("Value missing");
+                document.getElementById("total2").value = "Missing Value";
+                document.getElementById("total2").style.backgroundColor = "DarkGreen";
+            }
+            
+                        if (var1 == "" || var2 =="" || var3 =="" || var4 =="" || var9 =="") {
+                console.log ("Value missing");
+                document.getElementById("saved2").value = "Missing Value";
+                document.getElementById("saved2").style.backgroundColor = "DarkGreen";
+            }
+            
+                        if (var9 == "") {
+                console.log ("Value missing");
+                document.getElementById("TotalWeeks").value = "Missing Value";
+                document.getElementById("TotalWeeks").style.backgroundColor = "DarkGreen";
+            }
+            
+                        if (var1 == "" || var2 == "" || var3 =="" || var4 == "" || var9 =="") {
+                console.log ("Value missing");
+                document.getElementById("spendingmoney2").value = "Missing Value";
+                document.getElementById("spendingmoney2").style.backgroundColor = "DarkGreen";
+            }
+            
+        }
+
+        function refresh() {
+            document.getElementById("daysworked").value = "";
+            document.getElementById("hourlywage").value = "";
+            document.getElementById("hoursworked").value = "";
+            document.getElementById("percentsaved").value = "";
+            document.getElementById("DaysWorkedPerWeek").value = "";
+            document.getElementById("WeeksWorked").value = "";
+            document.getElementById("total2").value = 0;
+            document.getElementById("saved2").value = 0;
+            document.getElementById("total").value = 0;
+            document.getElementById("saved").value = 0;
+            document.getElementById("spendingmoney").value = 0;
+            document.getElementById("TotalDays").value = 0;
+            document.getElementById("TotalWeeks").value = 0;
+            document.getElementById("spendingmoney2").value = 0;
+            
+            document.getElementById("total2").style.backgroundColor = "";
+            document.getElementById("saved2").style.backgroundColor = "";
+            document.getElementById("total").style.backgroundColor = "";
+            document.getElementById("saved").style.backgroundColor = "";
+            document.getElementById("spendingmoney").style.backgroundColor = "";
+            document.getElementById("TotalDays").style.backgroundColor = "";
+            document.getElementById("TotalWeeks").style.backgroundColor = "";
+            document.getElementById("spendingmoney2").style.backgroundColor = "";
+            
+        }
+        //function error() { 
+        //if (var1 == "") {
+        //alert ("Not Receiving");
+        //}
+           // } 
+
+    </script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+
+       <!-- <div class="totalstyle">
+            Money Made in <output id="MonthsWorkedNumber">0</output> Months: <output id="MonthsWorkedOutput">0</output>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+    <div>
+        <h1 class="text">Money Made Per Job:</h1>
+        <p><i class="arrow down"></i></p>
+        <br>
+        <div class="TextBox"> $ <Input type="number" step="0.01" id="MoneyMadePerJob" /> </div>
+
+        <h1 class="text">Jobs Done:</h1>
+        <p><i class="arrow down"></i></p>
+        <div class="TextBox2"> <Input type="number" step="0.01" id="JobsDone" /> </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div>
+        <button onclick="myFunction()" class="Button">Convert</button>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="totalstyle">
+        Total made on Job: <output id="TotalMadeOnJob">0</output>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> -->

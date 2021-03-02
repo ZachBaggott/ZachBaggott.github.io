@@ -132,30 +132,42 @@ a.anchor {
 
 .streamsandrivers:hover .streamsandrivers-content {display: block;}
 
-.streamsandrivers:hover .dropbtn {background-color: lightgray;}
+.streamsandrivers:hover .dropbtn {background-color: lightgray;} 
 
-.img1 {
+
+img {
+    float: left;
+    clear: left;
     border: 10px solid;
     border-color: black;
     outline: none;
+    width: 46%;
+    opacity: 1.0;
 }
 
-.img2 {
-    float: right;
-    border: 10px solid;
-    border-color: black;
-    outline: none;
+.text {
+    font-family: Arial;
+    font-weight: 200;
     position: absolute;
-    clip: rect(100px,100px,10px,100px);
+    left: 50%;
+    bottom: 45%;
+    font-size: 20px;
 }
 
-.img3 {
-   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 10px solid;
-  border-color: black;
-  outline: none;
+.text2 {
+    font-family: Arial;
+    font-weight: 200;
+    position: absolute;
+    left: 50%;
+    bottom: 7%;
+    font-size: 20px;
 }
 
-img:focus { outline:0 !important; }
+.text3 {
+    font-family: Arial;
+    font-weight: 200;
+    position: absolute;
+    left: 50%;
+    bottom: -45%;
+    font-size: 20px;
+}

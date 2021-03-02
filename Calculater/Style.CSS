@@ -1,0 +1,151 @@
+body {
+    background-color: grey;
+}
+
+.text1-1 {
+    text-align: center;
+    font-family: Arial;
+    background-color: olivedrab;
+    width: 30%;
+}
+
+.text1 {
+    text-align: center;
+    font-family: Arial;
+}
+
+.text {
+    font-family: Arial;
+}
+
+.text2 {
+    font-family: Arial;
+    text-align: center;
+    font-size: 42px;
+}
+
+.navbar {
+    background-color: lightslategray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+    height: 85px;
+}
+
+.navbar a {
+  float: left;    
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial;
+  font-weight: bolder;
+  
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+.Button {
+    font-family: Arial;
+    font-size: 55px;
+    color: black;
+    background-color: grey;
+    position: relative;
+    right: -43%;
+}
+
+.Button2 {
+    font-family: Arial;
+    font-size: 30px;
+    color: black;
+    background-color: grey;
+    position: relative;
+    right: -33%;
+}
+
+.TextBox {
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial;
+  font-size: 30px;
+    font-weight: 900;
+}
+
+.TextBox2 {
+  margin: auto;
+  width: 8%;
+  padding: 20px;
+  font-family: Arial;
+  font-size: 25px;
+  
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+  left: 950px    
+      
+}
+
+.totalstyle {
+    font-family: Arial;
+    text-align: center;
+    font-size: 50px;
+}
+
+.column {
+  float: left;
+  width: 32.29%;
+  padding: 10px;
+  margin: 5px;
+  border-style: solid;
+  border-width: 15px;
+  border-color: black;
+  position: relative;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* .DailyRate {
+    float: left;
+    width: 33.33%;
+
+}
+
+.WeeklyRate {
+    position: relative;
+    left: 100px;
+    width: 10%;
+    text-align: center;
+}
+
+.MonthlyRate {
+        float: right;
+    width: 33.33%;
+} *\
+
+
