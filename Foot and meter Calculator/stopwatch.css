@@ -1,0 +1,63 @@
+body {
+    background-color: cadetblue;
+}
+
+/* (A) CONTAINER */
+#stopwatch {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: px;  
+  margin: 0 auto;
+}
+
+/* (B) TIME */
+#sw-time {
+   
+   width: 100%; 
+  padding: 30px 0;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  font-family: Arial; 
+}
+
+/* (C) BUTTONS */
+#sw-go {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+  padding: 400px ;
+  border: 0;
+  color: black;
+  font-weight: 650;    
+  font-size: 40px;
+  border-radius: 10px    
+}
+
+#sw-rst {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+  padding: 170px;
+  border: 0;
+  color: black;
+  font-weight: 650;    
+  font-size: 35px;
+  border-radius: 7px
+}
+
+#sw-rst { background-color: #a32208; }
+#sw-go { background-color: darkgreen; }
+
+.resulthtml {
+   font-family: Arial; 
+    font-size: 65px;
+    font-weight: 550;
+    text-align: center;
+}
+
+.Aresult {
+    font-weight: 600;
+    font-size: 79px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Simple Javascript Stopwatch
+    </title>
+    <link href="stopwatch.css" rel="stylesheet">
+    <script src="stopwatch.js"></script>
+  </head>
+  <body>
+    <br>
+      
+            
+      <div class="resulthtml">
+      Time in air = <output id="time" class="Aresult"> 0 </output> Seconds
+      </div>
+      <br>
+          <div class="resulthtml">
+    Height = <output id="result" class="Aresult"> 0 </output> Feet
+    </div>
+      <br>
+            <div class="resulthtml">
+    Height = <output id="result2" class="Aresult"> 0 </output> Meters
+    </div>
+      
+    <br>
+    <br>
+      
+    <div id="stopwatch">
+      <!-- CURRENT TIME -->
+      <div id="sw-time">00:0</div>
+
+      <!-- CONTROLS -->
+   <!-- <input type="button" value="Reset" id="sw-rst" disabled/> -->
+      <input type="button" value="Start" id="sw-go" disabled/>
+    <!--    <input type="button" value="Reset" id="sw-rst" disabled/> -->
+        <button onclick="reset()" id="sw-rst"> Reset </button>
+        <!-- <button id="reset" >Reset</button> -->
+    </div>
+    
+    </body>
+</html>
