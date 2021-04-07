@@ -24,6 +24,7 @@ body {
 
 /* (C) BUTTONS */
 #sw-go {
+  box-sizing: border-box;
   width: 100%;
   cursor: pointer;
   padding: 400px ;
