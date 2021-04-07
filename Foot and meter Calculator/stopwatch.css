@@ -23,7 +23,7 @@ body {
 }
 
 /* (C) BUTTONS */
-#sw-go {
+#sw-go {    
   box-sizing: border-box;
   width: 100%;
   cursor: pointer;
@@ -61,3 +61,11 @@ body {
     font-weight: 600;
     font-size: 79px;
 }
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
